@@ -10,10 +10,10 @@
 <body>
 
   <h1>Display Weather Information</h1>
-  <p>City: <%= weatherData.city %>
+  <p>City: <%= data.name %>
   </p>
-  <p>Temperature: <%= weatherData.temp %> °F</p>
-  <p>Description: <%= weatherData.description %>
+  <p>Temperature: <%= data.main.temp %> °F</p>
+  <p>Description: <%= data.weather[0].description %>
   </p>
   <a href="/">Back to home!</a>
 
