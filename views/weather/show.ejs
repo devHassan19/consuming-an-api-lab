@@ -4,20 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <title>Weather Information</title>
 </head>
 
 <body>
-
-  <h1>Display Weather Information</h1>
-  <p>City: <%= data.name %>
-  </p>
-  <p>Temperature: <%= data.main.temp %> °F</p>
-  <p>Description: <%= data.weather[0].description %>
-  </p>
-  <a href="/">Back to home!</a>
-
-
+  <div class="container">
+    <h1>Weather Information</h1>
+    <div class="weather-info">
+      <p><strong>City:</strong>
+        <%= data.name %>
+      </p>
+      <p><strong>Temperature:</strong>
+        <%= data.main.temp %> °F
+      </p>
+      <p><strong>Description:</strong>
+        <%= data.weather[0].description %>
+      </p>
+    </div>
+    <a href="/" class="back-link">Back to Home</a>
+  </div>
 </body>
 
 </html>

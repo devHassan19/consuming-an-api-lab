@@ -4,16 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>weather App!</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <title>Weather App</title>
 </head>
 
 <body>
-  <h1>Enter ZIP Code for Weather</h1>
-  <form action="/weather" method="POST">
-    <label for="zip">ZIP Code:</label>
-    <input type="text" id="zip" name="zip" required>
-    <button type="submit">Get The weather</button>
-  </form>
+  <div class="container">
+    <h1>Enter ZIP Code for Weather</h1>
+    <form action="/weather" method="POST">
+      <label for="zip">ZIP Code:</label>
+      <input type="text" id="zip" name="zip" required>
+      <button type="submit">Get The Weather</button>
+    </form>
+  </div>
 </body>
 
 </html>

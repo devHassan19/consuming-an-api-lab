@@ -1,11 +1,14 @@
+require('dotenv').config()
 const express = require('express')
 const axios = require('axios')
-const app = express()
+const path = require('path')
 
-const port = 4000
+const app = express()
+const API = process.env.API_KEY
+const port = 4009
 
 app.use(express.urlencoded({ extended: false }))
-
+app.use(express.static(path.join(__dirname, 'public')))
 app.get('/', (req, res) => {
   res.render('index.ejs')
 })
